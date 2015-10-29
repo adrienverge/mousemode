@@ -1,0 +1,8 @@
+[Unit]
+Description=mousemode
+
+[Service]
+ExecStart=/home/adrien/travail/mousemode/mousemode
+
+[Install]
+WantedBy=multi-user.target
