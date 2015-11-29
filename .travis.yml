@@ -1,0 +1,15 @@
+language: c
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - libxtst-dev
+      - libyaml-dev
+
+script:
+  - >
+      aclocal && autoconf && automake --add-missing
+      && ./configure
+      && make
